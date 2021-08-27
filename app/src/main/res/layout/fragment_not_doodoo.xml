@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/doodoo_background"
+    tools:context=".not_doodoo">
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+<com.google.android.material.textview.MaterialTextView
+    android:layout_width="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="50dp"
+    android:layout_marginTop="230dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:id="@+id/title"
+    app:fontFamily="cursive"
+    android:textStyle="bold"
+    />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="3000dp"
+            android:layout_gravity="center_horizontal"
+            app:lottie_autoPlay="false"
+            android:visibility="invisible"
+            app:lottie_fileName="underline1.json"
+            android:id="@+id/pencil"
+            android:layout_height="600dp"/>
+    </FrameLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/lottie"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatMode="restart"
+        app:lottie_repeatCount="100"
+        app:lottie_fileName="doodoo.json"
+        />
+
+</FrameLayout>
